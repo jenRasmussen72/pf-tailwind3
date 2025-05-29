@@ -678,10 +678,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .ml-auto {
   margin-left: auto;
 }
@@ -820,11 +816,6 @@ video {
   background-color: rgb(221 216 214 / var(--tw-bg-opacity, 1));
 }
 
-.bg-orange {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 140 0 / var(--tw-bg-opacity, 1));
-}
-
 .p-4 {
   padding: 1rem;
 }
@@ -855,24 +846,12 @@ video {
   text-align: center;
 }
 
-.font-baskervville {
-  font-family: 'Baskervville', Baskerville, Georgia, serif;
-}
-
-.font-opensans {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
-
 .font-oswald {
   font-family: 'Oswald', sans-serif;
 }
 
 .font-roboto {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
 }
 
 .text-4xl {
