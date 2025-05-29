@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF Page</title>
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3cbf4b108.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-roboto text-base text-black">
+    <a href="#main-content"
+        class="absolute -left-[10000px] top-0 w-px h-px overflow-hidden focus:absolute focus:top-0 focus:left-0 focus:w-auto focus:h-auto focus:overflow-visible focus:bg-orange focus:p-2">
+        Skip to content
+    </a>
+    <header id="header" class="flex bg-black h-20 items-center">
+        <!-- Header will be loaded here using JS -->
+    </header>
+    <main class="min-h-screen pb-32">
+        <!--banner-->
+        <section class="bg-lightGray">
+            <div class="text-center mx-auto">
+                <!-- discuss: this is the preferred method for performance but we cannot use tailwind breakpoints inside the media attribute 
+                <picture>
+                    <source srcset="./images/BirdDogBreeds_MobileHeader.jpg" media="(max-width: 768px)">
+                    <source srcset="./images/BirdDogBreeds_Header.jpg" media="(min-width: 769px)">
+                    <img src="./images/BirdDogBreeds_Header.jpg" alt="Bird Dog Breeds"
+                        class="w-[1400px] laptop:h-auto mx-auto">
+                </picture> -->
+                <img src="./images/BirdDogBreeds_MobileHeader.jpg" alt="Bird Dog Breeds" class="block tablet:hidden">
+                <img src="./images/BirdDogBreeds_Header.jpg" alt="Bird Dog Breeds"
+                    class="hidden tablet:block w-[1400px] laptop:h-auto mx-auto">
+            </div>
+        </section>
+
+        <!--content-->
+        <section id="main-content" class="container wide:max-w-screen-desktop mx-auto mt-10 flex flex-col gap-6 laptop:flex-row">
+            <aside class="laptop:w-2/12 order-2 laptop:order-none">
+                <nav class="sidenav">
+                    <div class="sidenav-header">Hunting</div>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Hunting Home</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>State Forecasts</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Prairie Grouse Primer</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Path to the Uplands</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Hunting Heritage</a></li>
+                        <li><a href="#" class="active"><i class="fa-solid fa-angle-right"></i>Bird Dog Breeds</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Rooster Road Trip</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Vest Story</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Sporting Dog Shorts</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="laptop:w-10/12">
+                <!--page intro-->
+                <div>
+                    <a href="#"><img src="./images/6pNo1A.webp" alt="" class="w-full h-auto"></a>
+                    <h1 class="font-oswald uppercase text-4xl text-center text-black font-[400] py-1 my-5 border-[#9b8d88] border-t border-b">Bird Dog Breeds</h1>
+                    <h2 class="font-oswald uppercase text-xl text-black font-bold mb-3">Without Bird Dogs, Would We Hunt At All?</h2>
+                    <p>For serious upland bird hunters, the idea of hunting pheasants (or any other gamebird for that matter) without a bird dog is a path to 
+                        frustration, futility and no fun.</p>
+                </div>
+                <div class="text-center my-6">
+                    <h3 class="font-oswald font-bold uppercase text-lg">Bird Finders:</h3>
+                    <p class="italic mb-6">A dog is essential for finding birds and helping you get them in the air.</p>
+
+                    <h3 class="font-oswald font-bold uppercase text-lg">Conservation Tools:</h3>
+                    <p class="italic mb-6">Dogs help you locate downed birds and track down winged birds. Many bird dogs will even retrieve your trophy to hand.</p>
+
+                    <h3 class="font-oswald font-bold uppercase text-lg">Hunting Partners:</h3>
+                    <p class="italic mb-6">The bond between hunter and bird dog is both ancient and magical.</p>
+                </div>
+                <div>
+                    <p>Are you looking for your next bird dog or your first? Our profiles get you started on learning more about 38 proven
+                        breeds for upland hunting.</p>
+                </div>
+
+                <!--flushing dogs-->
+                <div>
+                    <hr class="border-t border-divider my-4" />
+                    <h2 class="sr-only">Flushing Dogs</h2>
+                    <img src="./images/FlushingDogs_900.jpg" alt="Flushing Dogs" class="w-full h-auto">
+                    <p class="mt-4">Flushing dogs work cover close to the hunter - within shotgun range - and work to put birds into the air for a shot. 
+                        It's up to hunter to know his or her dog and when it is “birdy,” and be ready. Many flushing dogs are also natural 
+                        retrievers, and it can be as easy to train the dog to bring birds back as it is to teach the dog to stay close while scouring cover.</p>
+                </div>
+                <!--accordion-->
+                <div class="accordion mt-4 mb-12">
+                    <div class="accordion-item">
+                        <button class="accordion-button" onclick="toggleAccordion(this)">
+                            <h3>American Water Spaniel</h3>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                        </button>
+                        <div class="accordion-content hidden">
+                            <div class="flex flex-col tablet:flex-row items-center gap-4 mb-4">
+                                <img src="./images/American-Water-Spaniel_1.JPG" alt="American Water Spaniel" class="w-full tablet:w-1/2 h-auto order-1 tablet:order-2">
+                                <div class="text-center tablet:text-right w-full tablet:w-1/2 order-2 tablet:order-1">
+                                    <div class="font-oswald font-bold uppercase text-xl">Breed: <span class="text-orange">American Water Spaniel</span></div>
+                                    <div class="font-oswald font-bold uppercase text-xl">Type: <span class="text-orange">Flusher</span></div>
+                                    <div class="flex justify-center tablet:justify-end">
+                                        <p class="tablet:max-w-52 italic text-xs">
+                                            Developed in the upper Midwest, this mid-sized flusher is well-suited to a variety of game
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-oswald uppercase font-bold text-lg">Hunting Style</h4>
+                                <p>American water spaniels are steady, close-working flushers and excellent retrievers that stay within shotgun range
+                                at a moderate pace. Their dense, curly coats and strong retrieving instinct also makes them excellent waterfowl dogs.
+                                Like many of the small flushers, American water spaniels are versatile dogs that take to flushing naturally. They have
+                                keen noses, a naturally strong desire to retrieve, and are as at home hunting over water as in upland areas; as such they
+                                make excellent dual-purpose dogs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button" onclick="toggleAccordion(this)">
+                            <h3>Boykin Spaniel</h3>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                        </button>
+                        <div class="accordion-content hidden">
+                            <div class="flex flex-col tablet:flex-row items-center gap-4 mb-4">
+                                <img src="./images/Boykin-Spaniel_1.jpg" alt="Boykin Spaniel" class="w-full tablet:w-1/2 h-auto order-1 tablet:order-2">
+                                <div class="text-center tablet:text-right w-full tablet:w-1/2 order-2 tablet:order-1">
+                                    <div class="font-bold uppercase text-xl">Breed: <span class="text-orange">Boykin Spaniel</span>
+                                    </div>
+                                    <div class="font-bold uppercase text-xl">Type: <span class="text-orange">Flusher</span></div>
+                                    <div class="flex justify-center tablet:justify-end">
+                                        <p class="tablet:max-w-52 italic text-xs">
+                                            Developed in the Carolina lowlands, but well-suited to a variety of upland hunting
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="font-oswald uppercase font-bold text-lg">Hunting Style</h4>
+                                <p>Boykin spaniels generally quarter within shotgun range at a moderate, steady pace. This gives them the ability to hunt
+                                for long stretches of time. Boykins track birds both by scent and sight. Known for “hesitation flushes” - they don't
+                                flush birds with wild abandon, instead taking their time before making an aggressive flush - Boykin spaniels are
+                                versatile dogs that don't need to be commanded to flush birds. They have keen noses, a naturally strong desire to
+                                retrieve, and are as at home hunting over water as in upland areas; as such they make excellent dual-purpose dogs for
+                                uplanders who also like to chase a few ducks too.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--pointing dogs-->
+                <div>
+                    <hr class="border-t border-divider my-4">
+                    <h2 class="sr-only">Pointing Dogs</h2>
+                    <img src="./images/PointingDogs_900.jpg" alt="Pointing Dogs" class="w-full h-auto">
+                    <p class="mt-4">Pointing dogs generally cruise a little or a lot out of shotgun range of the hunter. When a bird is found, the dog
+                    "locks up" and points it; the hunter walks in for the flush. Some hunters keep their pointer within shotgun range in
+                    case of errant flushes from spooky birds.</p>
+                
+                    <!--accordion-->
+                    <div class="accordion mt-4 mb-12">
+                        <div class="accordion-item">
+                            <button class="accordion-button" onclick="toggleAccordion(this)">
+                                <h3>American Brittany</h3>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                            </button>
+                            <div class="accordion-content hidden">
+                                <div class="flex flex-col tablet:flex-row items-center gap-4 mb-4">
+                                    <img src="./images/American-Brittany.jpg" alt="American Brittany"
+                                        class="w-full tablet:w-1/2 h-auto order-1 tablet:order-2">
+                                    <div class="text-center tablet:text-right w-full tablet:w-1/2 order-2 tablet:order-1">
+                                        <div class="font-bold uppercase text-xl">Breed: <span class="text-orange">American Brittany</span></div>
+                                        <div class="font-bold uppercase text-xl">Type: <span class="text-orange">Pointer</span></div>
+                                        <div class="flex justify-center tablet:justify-end">
+                                            <p class="tablet:max-w-52 italic text-xs">
+                                                A fine little pointing and family dog from the northwest of France
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-oswald uppercase font-bold text-lg">Hunting Style</h4>
+                                    <p>The Brittany is a close-working pointing dog with natural hunting and retrieving ability. The Brittany originated in the
+                                    Brittany region of northwestern France, and was depicted in paintings as early as the 17th century. While not large in
+                                    stature, Brittanys have the speed and agility to cover a lot of ground. They are a tough and durable breed with skin and
+                                    coat built to resist punctures and tears in thick cover.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button" onclick="toggleAccordion(this)">
+                                <h3>Bracco Italiano</h3>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                            </button>
+                            <div class="accordion-content hidden">
+                                <div class="flex flex-col tablet:flex-row items-center gap-4 mb-4">
+                                    <img src="./images/Bracco-Italiano-NAVHDAwm.jpg" alt="Bracco Italiano"
+                                        class="w-full tablet:w-1/2 h-auto order-1 tablet:order-2">
+                                    <div class="text-center tablet:text-right w-full tablet:w-1/2 order-2 tablet:order-1">
+                                        <div class="font-bold uppercase text-xl">Breed: <span class="text-orange">Bracco Italiano</span>
+                                        </div>
+                                        <div class="font-bold uppercase text-xl">Type: <span class="text-orange">Pointer</span></div>
+                                        <div class="flex justify-center tablet:justify-end">
+                                            <p class="tablet:max-w-52 italic text-xs">
+                                                One of the oldest pointing breeds, the Bracco Italiano is a classic gun dog that originated in Italy, and makes a great
+                                                workmate in the field and friend at home
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-oswald uppercase font-bold text-lg">Hunting Style</h4>
+                                    <p>Although this personality-filled creature may be a challenging dog to train for newer hunters and dog owners, the Bracco
+                                    Italiano is an excellent worker with plenty of stamina and energy. Their alert and responsive temperament makes them
+                                    great workers in the field, in addition to possessing natural pointing and retrieving skills. Owners of the Bracco
+                                    admire their ability to learn something one hunting season, apply it the next hunting season, and get gradually better
+                                    and better at hunting as they get older.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--recent posts-->
+                <div class="border-b border-divider pb-10 tablet:border-none tablet:pb-0">
+                    <hr class="border-t border-divider my-6" />
+                    <h2 class="font-oswald text-xl text-center uppercase font-semibold text-secondary-header mb-6">Recent Posts</h2>
+                    <div class="grid grid-cols-2 tablet:grid-cols-4 gap-4">
+                        <div class="text-xs uppercase text-secondary-header font-extrabold leading-snug">
+                            <a href="./blog.html">
+                                <img class="w-full h-auto mb-2" src="./images/MAY_blog.jpg" alt="Sporting Dog Shorts - Unleashing Optimal Performance">
+                                <span class="category text-orange">Bird Dogs & Training</span><span class="text-mediumGray"> | 5/12/2025</span>
+                                <h3 class="font-oswald font-semibold text-base">Sporting Dog Shorts - Unleashing Optimal Performance</h3>
+                            </a>
+                        </div>
+                        <div class="text-xs uppercase text-secondary-header font-extrabold leading-snug">
+                            <a href="./blog.html">
+                                <img class="w-full h-auto mb-2"src="./images/blogSupImg-bobDog-660x440.jpg" alt="The Story of a Bird Dog Going Out on Top">
+                                <span class="category text-orange">Bird Dogs & Training</span><span class="text-mediumGray"> | 5/2/2025</span>
+                                <h3 class="font-oswald font-semibold text-base">The Story of a Bird Dog Going Out on Top</h3>
+                            </a>
+                        </div>
+                        <div class="text-xs uppercase text-secondary-header font-extrabold leading-snug">
+                            <a href="./blog.html">
+                                <img class="w-full h-auto mb-2" src="./images/Ticks2.jpg" alt="Ticks on the Brain">
+                                <span class="category text-orange">Bird Dogs & Training</span><span class="text-mediumGray"> | 4/18/2025</span>
+                                <h3 class="font-oswald font-semibold text-base">Ticks on the Brain</h3>
+                            </a>
+                        </div>
+                        <div class="text-xs uppercase text-secondary-header font-extrabold leading-snug">
+                            <a href="./blog.html">
+                                <img class="w-full h-auto mb-2" src="./images/BLOG_April.jpg" alt="Sporting Dog Shorts - Puppy Development 101">
+                                <span class="category text-orange">Bird Dogs & Training</span><span class="text-mediumGray"> | 4/17/2025</span>
+                                <h3 class="font-oswald font-semibold text-base">Sporting Dog Shorts - Puppy Development 101</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </main>
+    <footer id="footer" class="bg-black">
+        <!-- Footer will be loaded here using JS -->
+    </footer>
+</body>
+</html>

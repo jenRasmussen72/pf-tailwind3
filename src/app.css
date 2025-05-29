@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*layout debug*/
+/* * {
+  outline: 1px solid red;
+} */
+
+p {
+  @apply mb-2;
+}
+
+.sidenav .sidenav-header {
+  @apply font-oswald text-xl text-secondary-header uppercase mb-6;
+}
+
+.sidenav li {
+  @apply border-b border-[#e5e0de] py-2;
+}
+
+.sidenav li:last-child {
+  @apply border-0;
+}
+
+.sidenav a {
+  @apply text-sm;
+}
+
+.sidenav a i {
+  @apply text-link mr-2;
+}
+
+.sidenav a.active {
+  @apply font-bold;
+}
+
+.sidenav a:hover:not(.active) {
+  @apply text-link;
+}
+
+.accordion {
+  @apply mx-auto;
+}
+
+.accordion button {
+  @apply border-b text-sm w-full py-4 px-3 flex justify-between items-center bg-black text-white;
+}
+
+.accordion button.open {
+  @apply bg-[#9b8d88];
+}
+
+.accordion button h3 {
+  @apply font-semibold;
+}
+
+.accordion .accordion-content {
+  @apply p-3 shadow-accordion;
+}
+
+/*TODO: remove shadow from last item bottom (its on all but is only visible on last item)
+.accordion .accordion-content {
+  @apply p-3 shadow-accordion last:shadow-[4px_-4px_6px_-1px_rgba(0,0,0,0.1)];
+}
+*/
