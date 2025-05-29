@@ -714,11 +714,6 @@ video {
   height: auto;
 }
 
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .h-full {
   height: 100%;
 }
@@ -999,6 +994,7 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.accordion button:hover,
 .accordion button.open {
   --tw-bg-opacity: 1;
   background-color: rgb(155 141 136 / var(--tw-bg-opacity, 1));
