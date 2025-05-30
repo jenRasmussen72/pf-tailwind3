@@ -1103,14 +1103,6 @@ p {
     justify-content: flex-end;
   }
 
-  .tablet\:border-none {
-    border-style: none;
-  }
-
-  .tablet\:pb-0 {
-    padding-bottom: 0px;
-  }
-
   .tablet\:text-right {
     text-align: right;
   }
